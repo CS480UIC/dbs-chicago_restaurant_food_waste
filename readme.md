@@ -8,7 +8,7 @@ chicago-restaurant_food_waste
 Lucas Beasley
 Niko Castellana
 Justin Long
-(add your names here)
+Vishvak Kumaran
 # Database description
 Database built to monitor average food waste in Chicago restaurants. Schema as follows
 CREATE TABLE(
