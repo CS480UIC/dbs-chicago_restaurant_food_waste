@@ -3,9 +3,15 @@
 1. [Author(s)](#author)
 1. [Database description](#description)
 # Database
-DATABASE NAME
+chicago-restaurant_food_waste
 # Author(s)
 Lucas Beasley
 (add your names here)
 # Database description
-Write the database description and requirements here
+Database built to monitor average food waste in Chicago restaurants. Schema as follows
+CREATE TABLE(
+  restaurant name varchar(200),
+  address varchar(200),
+  daily_avg_customers float,
+  kg_food_waste_daily_avg float
+);
