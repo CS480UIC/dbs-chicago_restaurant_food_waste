@@ -6,6 +6,7 @@
 chicago-restaurant_food_waste
 # Author(s)
 Lucas Beasley
+Niko Castellana
 (add your names here)
 # Database description
 Database built to monitor average food waste in Chicago restaurants. Schema as follows
