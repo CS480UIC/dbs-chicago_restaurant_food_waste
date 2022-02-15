@@ -5,7 +5,7 @@
 # Database
 DATABASE NAME
 # Author(s)
-AUTHOR1
-AUTHOR2
+Lucas Beasley
+(add your names here)
 # Database description
 Write the database description and requirements here
