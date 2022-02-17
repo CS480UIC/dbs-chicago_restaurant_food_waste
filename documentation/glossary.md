@@ -27,11 +27,17 @@ user_login:
 RELATIONSHIPS
 -------
 customer_visits_restaurant many-to-one
+
 order_placed_at_restaurant many-to-one
+
 restaurant_owns_dumpster   one-to-one
+
 restaurant_offers_menu     one-to-one
+
 restaurant_uses_supplier   one-to-many
+
 customer_places_order      one-to-many
+
 restaurant_produces_avg_waste  one-to-one
 
 ATTRIBUTES
