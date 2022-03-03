@@ -81,5 +81,5 @@ phone_number M(1)
 Key: Max number next to attribute. Min denotes number in paranthesis
 -------
 
-## Entities
+# ENTITIES
 
