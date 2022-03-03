@@ -81,5 +81,30 @@ phone_number M(1)
 Key: Max number next to attribute. Min denotes number in paranthesis
 -------
 
-## ENTITIES
+## ENTITIES AND DEPENDENCY RELATIONSHIPS
 
+restaurant: Independent Entity
+ 
+customer: Independent Entity
+  
+order: Dependent entity depends on restaurant and customer 
+  
+food_waste: Dependent Entity depends on restaurant
+  
+dumpster: Dependent Entity depends on restaurant
+  
+menu: Dependent Entity depends on restaurant
+  
+supplier:Dependent Entity depends on restaurant
+  
+user_login: Independent Entity
+  
+## SUPERTYPES SUBTYPES AND PARTITIONS
+
+restaurant: Supertype has subtypes menu, dumpster, and food_waste
+
+customer: Supertype has subtype order
+
+## CASCADE AND RESTRICT ACTIONS
+
+## CASCADE AND RESTRICT RULES
