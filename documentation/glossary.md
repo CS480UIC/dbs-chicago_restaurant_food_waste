@@ -107,4 +107,14 @@ customer: Supertype has subtype order
 
 ## CASCADE AND RESTRICT ACTIONS
 
+order: foreign keys customer_id and restaurant_id NOT NULL
+  
+food_waste: foreign key restauant_id UNIQUE
+  
+dumpster: foreign key restaurant_id NOT NULL
+  
+menu: foreign key restaurant_id NOT NULL
+  
+supplier: foreign key restaurant_id NOT NULL
+
 ## CASCADE AND RESTRICT RULES
