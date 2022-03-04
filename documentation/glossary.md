@@ -43,37 +43,37 @@ restaurant_produces_avg_waste  one-to-one
 ATTRIBUTES
 -------
 int user_id 1(1) |
-varchar (200) user_password 1(1)
-varchar (200) user_email 1(1)
+varchar (200) user_password 1(1) |
+varchar (200) user_email 1(1) |
 
-int restaurant_id 1(1)
-varchar (200) name 1(1)
-varchar (200) address 1(1)
-varchar (200) phone_number M(1)
+int restaurant_id 1(1) |
+varchar (200) name 1(1) |
+varchar (200) address 1(1) |
+varchar (200) phone_number M(1) |
 
-int customer_id 1(1)
-varchar (200) email_address 1(1)
-varchar (200) name 1(1)
+int customer_id 1(1) |
+varchar (200) email_address 1(1) |
+varchar (200) name 1(1) |
 
-int order_id M(1)
-int customer_id M(1)
-int restaurant_id M(1)
+int order_id M(1) |
+int customer_id M(1) |
+int restaurant_id M(1) |
 
-int restaurant_id M(1)
-float avg_daily_waste 1(0)
+int restaurant_id M(1) |
+float avg_daily_waste 1(0) |
 
-int dumpster_id M(1)
-int restaurant_id M(1)
-float capacity 1(0)
+int dumpster_id M(1) |
+int restaurant_id M(1) |
+float capacity 1(0) |
 
-int restaurant_id M(1)
-int menu_id M(1)
-varchar (200) menu_items M(1)
+int restaurant_id M(1) |
+int menu_id M(1) |
+varchar (200) menu_items M(1) |
 
-int supplier_id M(1)
-int restauarant_id M(1)
-varchar (200) address M(1)
-varchar (200) phone_number M(1)
+int supplier_id M(1) |
+int restauarant_id M(1) |
+varchar (200) address M(1) |
+varchar (200) phone_number M(1) |
 
 
 
