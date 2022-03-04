@@ -42,7 +42,7 @@ restaurant_produces_avg_waste  one-to-one
 
 ATTRIBUTES
 -------
-int user_id 1(1)
+int user_id 1(1) |
 varchar (200) user_password 1(1)
 varchar (200) user_email 1(1)
 
