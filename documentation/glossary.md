@@ -42,38 +42,42 @@ restaurant_produces_avg_waste  one-to-one
 
 ATTRIBUTES
 -------
-int user_id 1(1) |
-varchar (200) user_password 1(1) |
-varchar (200) user_email 1(1) |
 
-int restaurant_id 1(1) |
-varchar (200) name 1(1) |
-varchar (200) address 1(1) |
-varchar (200) phone_number M(1) |
+### An example of a plural attribute would be menu_item of the table menu, since each restaurant offers many different kinds of unique foods to eat.
 
-int customer_id 1(1) |
-varchar (200) email_address 1(1) |
-varchar (200) name 1(1) |
+user_id INT UNIQUE 1(1) |
+user_password VARCHAR(200) NOT NULL 1(1) |
+user_email VARCHAR(200) UNIQUE 1(1) 
 
-int order_id M(1) |
-int customer_id M(1) |
-int restaurant_id M(1) |
+restaurant_id INT UNIQUE 1(1) |
+name VARCHAR(200) NOT NULL 1(1) |
+address VARCHAR(200) 1(1) |
+phone_number VARCHAR(200) M(1) 
 
-int restaurant_id M(1) |
-float avg_daily_waste 1(0) |
+customer_id INT UNIQUE 1(1) |
+email_address VARCHAR(200) 1(1) |
+name VARCHAR(200) NOT NULL 1(1) 
 
-int dumpster_id M(1) |
-int restaurant_id M(1) |
-float capacity 1(0) |
+order_id INT UNIQUE  M(1) |
+customer_id INT NOT NULL  M(1) |
+restaurant_id INT NOT NULL  M(1) 
 
-int restaurant_id M(1) |
-int menu_id M(1) |
-varchar (200) menu_items M(1) |
+food_waste_id INT UNIQUE M(1) |
+restaurant_id INT UNIQUE M(1) |
+avg_daily_waste FLOAT 1(0) 
 
-int supplier_id M(1) |
-int restauarant_id M(1) |
-varchar (200) address M(1) |
-varchar (200) phone_number M(1) |
+dumpster_id INT UNIQUE M(1) |
+restaurant_id INT NOT NULL M(1) |
+capacity FLOAT 1(0) 
+
+restaurant_id INT NOT NULL M(1) |
+menu_id INT UNIQUE M(1) |
+menu_items VARCHAR(200) NOT NULL M(1) 
+
+supplier_id INT UNIQUE M(1) |
+restauarant_id INT NOT NULL M(1) |
+address VARCHAR(200) M(1) |
+phone_number VARCHAR(200) M(1) 
 
 
 
