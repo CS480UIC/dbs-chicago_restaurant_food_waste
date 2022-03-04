@@ -119,7 +119,7 @@ supplier: foreign key restaurant_id NOT NULL
 
 ## CASCADE AND RESTRICT RULES
 
-# Note: When a row is deleted in restuarant, we want the child tables' row containing that restaurant to delete and update.
+### Note: When a row is deleted in restuarant, we want the child tables' row containing that restaurant to delete and update.
 
 order: foreign keys customer_id ON DELETE CASCADE and restaurant_id ON DELETE CASCADE
 
