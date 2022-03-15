@@ -24,6 +24,9 @@ supplier:
 user_login: 
   Table to hold user login data to the datebase.
   
+garbage_truck:
+  Table to represent each garbage truck servicing a particular restaurant.
+  
 RELATIONSHIPS
 -------
 customer_visits_restaurant many-to-one
@@ -39,6 +42,8 @@ restaurant_uses_supplier   one-to-many
 customer_places_order      one-to-many
 
 restaurant_produces_avg_waste  one-to-one
+
+restaurant_uses_garbage_truck one-to-many
 
 ATTRIBUTES
 -------
@@ -79,6 +84,10 @@ restauarant_id INT NOT NULL M(1) |
 address VARCHAR(200) M(1) |
 phone_number VARCHAR(200) M(1) 
 
+truck_id INT UNIQUE M(1) |
+restaurant_id INT NOT NULL M(1) |
+truck_capacity INT NOT NULL M(1)
+
 
 
 
@@ -102,10 +111,12 @@ menu: Dependent Entity depends on restaurant
 supplier:Dependent Entity depends on restaurant
   
 user_login: Independent Entity
+
+garbage_truck: Dependent Entity depends on restaurant
   
 ## SUPERTYPES SUBTYPES AND PARTITIONS
 
-restaurant: Supertype has subtypes menu, dumpster, and food_waste
+restaurant: Supertype has subtypes menu, dumpster, food_waste, and garbage_truck
 
 customer: Supertype has subtype order
 
@@ -121,6 +132,8 @@ menu: foreign key restaurant_id NOT NULL
   
 supplier: foreign key restaurant_id NOT NULL
 
+garbage_truck: foreign key restaurant_id NOT NULL
+
 ## CASCADE AND RESTRICT RULES
 
 ### Note: When a row is deleted in restuarant, we want the child tables' row containing that restaurant to delete and update.
@@ -134,6 +147,8 @@ dumpster: foreign key restaurant_id ON DELETE CASCADE
 menu: foreign key restaurant_id ON DELETE CASCADE
   
 supplier: foreign key restaurant_id ON DELETE CASCADE
+
+garbage_truck: foreign key restaurant_id ON DELETE CASCADE
 
 
 
