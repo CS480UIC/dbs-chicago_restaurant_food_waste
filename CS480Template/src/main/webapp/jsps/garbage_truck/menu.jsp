@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Update Supplier</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +22,12 @@
   </head>
   
   <body>
-  <h1>Update Supplier</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update Supplier   :<input type="text" name="supplier_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-	<input type="submit" value="Update Supplier"/>
-</form>
+    <h1>CRUD operations for Garbage Truck </h1>
+    <br>
+	<a href="<c:url value='/jsps/garbage_truck/garbage_truckcreate.jsp'/>" target="_parent">Create Garbage Truck</a> |&nbsp; 
+	<a href="<c:url value='/jsps/garbage_truck/garbage_truckread.jsp'/>" target="_parent">Read Garbage Truck</a> |&nbsp;
+	<a href="<c:url value='/jsps/garbage_truck/garbage_truckupdate.jsp'/>" target="_parent">Update Garbage Truck</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/garbage_truck/garbage_truckdelete.jsp'/>" target="_parent">Delete Garbage Truck</a>	
+	    
   </body>
 </html>

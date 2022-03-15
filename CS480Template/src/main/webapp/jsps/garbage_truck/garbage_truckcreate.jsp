@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Supplier</title>
+    <title>Garbage Truck Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,18 @@
   </head>
   
   <body>
-  <h1>Update Supplier</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update Supplier   :<input type="text" name="supplier_id" value="${form.username }"/>
+  <h1>Garbage Truck Create</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	truck_id    :<input type="text" name="truck_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Update Supplier"/>
+	restaurant_id：<input type="password" name="restaurant_id" value="${form.password }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<br/>
+	capacity	：<input type="text" name="capacity" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<br/>
+	<input type="submit" value="Create Garbage Truck"/>
 </form>
   </body>
 </html>
