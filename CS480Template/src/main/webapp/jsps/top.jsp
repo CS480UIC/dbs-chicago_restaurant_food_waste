@@ -31,7 +31,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">Lucas Beasley</h1>
+<h1 style="text-align: center;">Chicago Restaurant Food Waste</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -44,7 +44,7 @@
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
-
+			<a href="<c:url value='/jsps/restaurant/menu.jsp'/>" target="body">CRUD Restaurant</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
