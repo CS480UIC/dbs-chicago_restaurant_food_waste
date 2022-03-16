@@ -43,3 +43,15 @@ CREATE TABLE(
 ![truckread](https://user-images.githubusercontent.com/89756130/158476659-ee44ac81-9f8c-4e9f-abab-38b0264dc596.PNG)
 ![truckupdate](https://user-images.githubusercontent.com/89756130/158476667-613590a2-325a-4c9a-9f91-233c99e4feb7.PNG)
 ![truckdelete](https://user-images.githubusercontent.com/89756130/158476676-be58a4e6-b3eb-4d61-968b-684549f9944a.PNG)
+
+# Menu CRUD
+![Screen Shot 2022-03-15 at 6 56 30 PM](https://user-images.githubusercontent.com/65303089/158491089-8941e752-d5d8-4eb3-9665-3bbcb04bece2.png)
+![Screen Shot 2022-03-15 at 7 06 45 PM](https://user-images.githubusercontent.com/65303089/158491940-e29d51b3-2eb0-4aaa-8374-cf869a158e80.png)
+![Screen Shot 2022-03-15 at 7 10 11 PM](https://user-images.githubusercontent.com/65303089/158492207-a23220fb-cd24-4f2a-ab06-fbea69c9230d.png)
+![Screen Shot 2022-03-15 at 7 12 40 PM](https://user-images.githubusercontent.com/65303089/158492437-27665a5d-b1e1-4709-a450-f429e3a5331a.png)
+![Screen Shot 2022-03-15 at 7 15 00 PM](https://user-images.githubusercontent.com/65303089/158492600-c6eb20e3-7b40-41fa-bd51-e35e73a3cb7a.png)
+
+# Dumpster CRUD
+
+
+
