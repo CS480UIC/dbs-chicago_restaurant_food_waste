@@ -48,6 +48,8 @@
 			<a href="<c:url value='/jsps/customer/menu.jsp'/>" target="body">CRUD Customer</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/supplier/menu.jsp'/>" target="body">CRUD Supplier</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/garbage_truck/menu.jsp'/>" target="body">CRUD Garbage Truck</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/menu/menu.jsp'/>" target="body">CRUD Menu</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/dumpster/menu.jsp'/>" target="body">CRUD Dumpster</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
