@@ -52,6 +52,11 @@ CREATE TABLE(
 ![Screen Shot 2022-03-15 at 7 15 00 PM](https://user-images.githubusercontent.com/65303089/158492600-c6eb20e3-7b40-41fa-bd51-e35e73a3cb7a.png)
 
 # Dumpster CRUD
+![Screen Shot 2022-03-15 at 7 24 16 PM](https://user-images.githubusercontent.com/65303089/158493306-b8b60120-0e4b-4adc-85e1-c2923df15e27.png)
+![Screen Shot 2022-03-15 at 7 32 42 PM](https://user-images.githubusercontent.com/65303089/158494056-4acf1051-7209-4d62-8163-83d51f882344.png)
+![Screen Shot 2022-03-15 at 7 34 43 PM](https://user-images.githubusercontent.com/65303089/158494213-40435f89-1483-48ec-91b1-fb2b58e294b8.png)
+![Screen Shot 2022-03-15 at 7 35 11 PM](https://user-images.githubusercontent.com/65303089/158494248-1571bb65-4907-4aaf-9807-a88652b77129.png)
+![Screen Shot 2022-03-15 at 7 35 50 PM](https://user-images.githubusercontent.com/65303089/158494299-bebaf9d7-c2c9-4201-81d9-897856447777.png)
 
 
 
