@@ -50,6 +50,8 @@
 			<a href="<c:url value='/jsps/garbage_truck/menu.jsp'/>" target="body">CRUD Garbage Truck</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/menu/menu.jsp'/>" target="body">CRUD Menu</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/dumpster/menu.jsp'/>" target="body">CRUD Dumpster</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/food_waste/menu.jsp'/>" target="body">CRUD Food_Waste</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/order/menu.jsp'/>" target="body">CRUD Order</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
