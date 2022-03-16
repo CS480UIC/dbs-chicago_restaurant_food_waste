@@ -58,5 +58,22 @@ CREATE TABLE(
 ![Screen Shot 2022-03-15 at 7 35 11 PM](https://user-images.githubusercontent.com/65303089/158494248-1571bb65-4907-4aaf-9807-a88652b77129.png)
 ![Screen Shot 2022-03-15 at 7 35 50 PM](https://user-images.githubusercontent.com/65303089/158494299-bebaf9d7-c2c9-4201-81d9-897856447777.png)
 
+# Food Waste CRUD
+<img width="692" alt="Screen Shot 2022-03-15 at 10 45 04 PM" src="https://user-images.githubusercontent.com/65250592/158513510-05e2c194-e4aa-401c-bc35-aa7fff9d6d01.png">
+<img width="482" alt="Screen Shot 2022-03-15 at 10 46 08 PM" src="https://user-images.githubusercontent.com/65250592/158513748-83d6343d-22ab-4845-933d-7c9f918fe9df.png">
+<img width="668" alt="Screen Shot 2022-03-15 at 10 48 00 PM" src="https://user-images.githubusercontent.com/65250592/158513567-9c6aa982-0b71-4bc6-917d-a1956703e314.png">
+<img width="576" alt="Screen Shot 2022-03-15 at 10 46 39 PM" src="https://user-images.githubusercontent.com/65250592/158513793-9563a02f-f58f-477f-8363-1f2d54ac7779.png">
+<img width="661" alt="Screen Shot 2022-03-15 at 10 47 24 PM" src="https://user-images.githubusercontent.com/65250592/158513816-fb4b913a-22c1-4ed2-ae2e-3f165c6dfd33.png">
+
+
+# Order CRUD
+<img width="640" alt="Screen Shot 2022-03-15 at 10 49 06 PM" src="https://user-images.githubusercontent.com/65250592/158513420-e0736dd5-9c31-4d30-b0bd-710aafad3cee.png">
+<img width="661" alt="Screen Shot 2022-03-15 at 10 49 30 PM" src="https://user-images.githubusercontent.com/65250592/158513626-b6b08672-68b4-40cd-bd6e-7ca4e91f138a.png">
+<img width="503" alt="Screen Shot 2022-03-15 at 10 49 48 PM" src="https://user-images.githubusercontent.com/65250592/158513681-5b69b282-37cc-4e85-8f7f-ac52692fe73c.png">
+<img width="468" alt="Screen Shot 2022-03-15 at 10 50 03 PM" src="https://user-images.githubusercontent.com/65250592/158513724-6efb76d4-fe5e-4571-9199-802736e98cba.png">
+<img width="499" alt="Screen Shot 2022-03-15 at 10 50 21 PM" src="https://user-images.githubusercontent.com/65250592/158513777-fb14c290-57ee-4634-9feb-6e48eed42643.png">
+
+
+
 
 
