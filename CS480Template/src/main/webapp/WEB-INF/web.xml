@@ -71,6 +71,18 @@
   </servlet-mapping>
   
   
+   <servlet>
+    <description></description>
+    <display-name>InitializeDB</display-name>
+    <servlet-name>InitializeDB</servlet-name>
+    <servlet-class>init.web.servlet.InitializeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitializeDB</servlet-name>
+    <url-pattern>/InitializeDB</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>UserServletLogout</display-name>
@@ -82,6 +94,7 @@
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
   
+ 
   
   <servlet>
     <description></description>

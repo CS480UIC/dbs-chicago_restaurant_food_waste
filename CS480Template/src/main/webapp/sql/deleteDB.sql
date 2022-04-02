@@ -17,3 +17,5 @@ DROP table food_waste;
 DROP table `order`;
 
 DROP table customer;
+
+DROP table restaurant;
