@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Customer Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,15 +22,15 @@
   
   <body>
   <h1>Customer Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	customer_id:<input type="text" name="customer_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/CustomerServletCreate'/>" method="post">
+	customer_id:<input type="text" name="customer_id" value="${form.customer_id }"/>
+	<span style="color: red; font-weight: 900">${errors.customer_id }</span>
 	<br/>
-	email_address：<input type="text" name="name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	email_address：<input type="text" name="email_address" value="${form.email_address }"/>
+	<span style="color: red; font-weight: 900">${errors.email_address }</span>
 	<br/>
-	name：<input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	name：<input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
 	<input type="submit" value="Create Customer"/>
 </form>

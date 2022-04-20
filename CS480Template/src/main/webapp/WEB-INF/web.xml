@@ -135,6 +135,49 @@
     <url-pattern>/OrderServletDelete</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+    <description></description>
+    <display-name>CustomerServletCreate</display-name>
+    <servlet-name>CustomerServletCreate</servlet-name>
+    <servlet-class>customer.web.servlet.CustomerServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServletCreate</servlet-name>
+    <url-pattern>/CustomerServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CustomerServletRead</display-name>
+    <servlet-name>CustomerServletRead</servlet-name>
+    <servlet-class>customer.web.servlet.CustomerServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServletRead</servlet-name>
+    <url-pattern>/CustomerServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CustomerServletUpdate</display-name>
+    <servlet-name>CustomerServletUpdate</servlet-name>
+    <servlet-class>customer.web.servlet.CustomerServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServletUpdate</servlet-name>
+    <url-pattern>/CustomerServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CustomerServletDelete</display-name>
+    <servlet-name>CustomerServletDelete</servlet-name>
+    <servlet-class>customer.web.servlet.CustomerServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerServletDelete</servlet-name>
+    <url-pattern>/CustomerServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
