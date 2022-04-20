@@ -23,10 +23,10 @@
   <body>
   <h1>Read Order</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/OrderServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	 order_id  :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	 order_id  :<input type="text" name="order_id" value="${form.order_id }"/>
+	<span style="color: red; font-weight: 900">${errors.order_id }</span>
 	<br/>
 	<input type="submit" value="Read Order"/>
 </form>

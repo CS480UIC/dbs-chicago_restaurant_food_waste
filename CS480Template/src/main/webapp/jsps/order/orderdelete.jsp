@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete an Order</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/OrderServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete Order  :<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.order_id }</span>

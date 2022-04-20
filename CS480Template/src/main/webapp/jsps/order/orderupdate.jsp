@@ -22,12 +22,12 @@
   
   <body>
   <h1>Update Order</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/OrderServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update order_id   :<input type="text" name="order_id" value="${form.order_id }"/>
+	order_id   :<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.order_id }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Order"/>
 </form>
   </body>
 </html>

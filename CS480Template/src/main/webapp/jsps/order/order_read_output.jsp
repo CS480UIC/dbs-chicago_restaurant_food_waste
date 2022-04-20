@@ -21,14 +21,14 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Order Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	Order ID    :<input type="text" name="order_id" value="${entity1.order_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Customer ID：<input type="text" name="customer_id" value="${entity1.customer_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Restaurant ID	：<input type="text" name="restaurant_id" value="${entity1.restaurant_id }" disabled/>
 	<br/>
 </form>
 

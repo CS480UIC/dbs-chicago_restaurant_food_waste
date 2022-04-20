@@ -94,7 +94,46 @@
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
   
- 
+ <servlet>
+    <description></description>
+    <display-name>OrderServletCreate</display-name>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletCreate</servlet-name>
+    <url-pattern>/OrderServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderServletRead</display-name>
+    <servlet-name>OrderServletRead</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletRead</servlet-name>
+    <url-pattern>/OrderServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderServletUpdate</display-name>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletUpdate</servlet-name>
+    <url-pattern>/OrderServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderServletDelete</display-name>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <servlet-class>order.web.servlet.OrderServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletDelete</servlet-name>
+    <url-pattern>/OrderServletDelete</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <description></description>
