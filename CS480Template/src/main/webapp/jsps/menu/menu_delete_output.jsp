@@ -25,13 +25,15 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/MenuServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${menu.menu_id}"/>
+		<input type="hidden" name="menu_id" value="${menu.menu_id}"/>
 	Menu ID ：<input type="text" name="menu_id" value="${menu.menu_id }" disabled/>
 	<br/>
 	Restaurant ID :<input type="text" name="restaurant_id" value="${menu.restaurant_id }" disabled/>
 	<br/>
 	Menu Item ：<input type="text" name="menu_item" value="${menu.menu_item}" disabled/>
 	<br/>
+	
+	<input type="submit" value="Delete Menu"/>
 </form>
 
 </body>

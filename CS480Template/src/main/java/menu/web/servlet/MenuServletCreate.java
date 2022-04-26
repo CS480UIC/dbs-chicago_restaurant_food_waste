@@ -1,8 +1,7 @@
-package entity1.web.servlet;
+package menu.web.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -11,22 +10,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.domain.Restaurant;
-import entity1.service.Entity1Exception;
-import entity1.service.RestaurantService;
+import menu.domain.Menu;
+import menu.service.MenuException;
+import menu.service.MenuService;
 
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletCreate extends HttpServlet {
+public class MenuServletCreate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Entity1ServletCreate() {
+    public MenuServletCreate() {
         super();
     }
 
@@ -41,24 +40,24 @@ public class Entity1ServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RestaurantService entity1service = new RestaurantService();
+		MenuService entity1service = new MenuService();
 		Map<String,String[]> paramMap = request.getParameterMap();
-		Restaurant form = new Restaurant();
+		Menu form = new Menu();
 		List<String> info = new ArrayList<String>();
 
 		for(String name : paramMap.keySet()) {
 			String[] values = paramMap.get(name);
 			info.add(values[0]);
 		}
-		form.setUsername(info.get(0));
-		form.setPassword(info.get(1));
-		form.setEmail(info.get(2));		
+		form.setMenu_id(Integer.parseInt(info.get(0)));
+		form.setRestaurant_id(Integer.parseInt(info.get(1)));
+		form.setMenu_item(info.get(2));	
 		
 		try {
 			entity1service.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 			
-		} catch (ClassNotFoundException | Entity1Exception e) {
+		} catch (ClassNotFoundException | MenuException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();

@@ -1,8 +1,7 @@
-package entity1.web.servlet;
+package menu.web.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -11,20 +10,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.RestaurantDao;
-import entity1.domain.Restaurant;
+import menu.dao.MenuDao;
+import menu.domain.Menu;
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletUpdate extends HttpServlet {
+public class MenuServletUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Entity1ServletUpdate() {
+	public MenuServletUpdate() {
 		super();
 	}
 
@@ -41,13 +40,13 @@ public class Entity1ServletUpdate extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String method = request.getParameter("method");
-		RestaurantDao entity1dao = new RestaurantDao();
-		Restaurant entity1 = null;
+		MenuDao menuDao = new MenuDao();
+		Menu menu = null;
 
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1dao.findByUsername(request.getParameter("username"));
+				menu = menuDao.findByID(Integer.parseInt(request.getParameter("menu_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -56,32 +55,32 @@ public class Entity1ServletUpdate extends HttpServlet {
 				e1.printStackTrace();
 			}
 
-			if(entity1.getUsername()!=null){
-				request.setAttribute("entity1", entity1);
-				request.getRequestDispatcher("/jsps/entity1/entity1_update_output.jsp").forward(request, response);
+			if(menu.getMenu_id()!=null){
+				request.setAttribute("menu", menu);
+				request.getRequestDispatcher("/jsps/menu/menu_update_output.jsp").forward(request, response);
 
 			}
 			else{
 				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.getRequestDispatcher("/jsps/menu/menu_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("update"))
 		{
 			Map<String,String[]> paramMap = request.getParameterMap();
-			Restaurant form = new Restaurant();
+			Menu form = new Menu();
 			List<String> info = new ArrayList<String>();
 
 			for(String name : paramMap.keySet()) {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setPassword(info.get(2));
-			form.setEmail(info.get(3));
-			form.setUsername(request.getParameter("username"));
+			form.setRestaurant_id(Integer.parseInt(info.get(2)));
+			form.setMenu_item(info.get(3));
+			form.setMenu_id(Integer.parseInt(request.getParameter("menu_id")));
 
 			try {
-				entity1dao.update(form);
+				menuDao.update(form);
 
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
@@ -90,8 +89,8 @@ public class Entity1ServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Updated");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Menu Updated");
+			request.getRequestDispatcher("/jsps/menu/menu_read_output.jsp").forward(request, response);
 		}
 	}
 }

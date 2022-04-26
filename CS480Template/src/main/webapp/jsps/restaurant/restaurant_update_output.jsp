@@ -24,22 +24,22 @@
   <h1>Update Restaurant</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Restaurant ID   :<input type="text" name="username" value="${restaurant.restaurant_id  }" disabled/>
+	Restaurant ID   :<input type="text" name="restaurant_id" value="${restaurant.restaurant_id  }" disabled/>
 	<br/>
 	
-	Name：<input type="text" name="password" value="${restaurant.name}" disabled/>
+	Name：<input type="text" name="name" value="${restaurant.name}" disabled/>
 	<br/>
-	Address：<input type="text" name="email" value="${restaurant.address }" disabled/>
+	Address：<input type="text" name="address" value="${restaurant.address }" disabled/>
 	<br/>
-	Phone Number：<input type="text" name="email" value="${restaurant.phone_number}" disabled/>
+	Phone Number：<input type="text" name="phone_number" value="${restaurant.phone_number}" disabled/>
 	<br/>
-	Founded Date：<input type="text" name="email" value="${restaurant.founded_date}" disabled/>
+	Founded Date：<input type="text" name="founded_date" value="${restaurant.founded_date}" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
 <form action="<c:url value='/RestaurantServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-		<input type="hidden" name="username" value="${restaurant.restaurant_id }"/>
+		<input type="hidden" name="restaurant_id" value="${restaurant.restaurant_id }"/>
 	Name：<input type="text" name="name" value="${form.name }"/>
 	<span style="color: red; font-weight: 900">${errors.name}</span>
 	<br/>
@@ -49,7 +49,7 @@
 	Phone Number：<input type="text" name="phone_number" value="${form.phone_number }"/>
 	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
 	<br/>
-	Founded Date：<input type="text" name="phone_number" value="${form.founded_date }"/>
+	Founded Date：<input type="text" name="founded_date" value="${form.founded_date }"/>
 	<span style="color: red; font-weight: 900">${errors.founded_date}</span>
 	<br/>
 	<input type="submit" value="Update Restaurant"/>

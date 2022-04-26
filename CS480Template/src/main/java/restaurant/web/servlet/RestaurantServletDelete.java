@@ -1,4 +1,4 @@
-package entity1.web.servlet;
+package restaurant.web.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -6,21 +6,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.RestaurantDao;
-import entity1.domain.Restaurant;
+import restaurant.dao.RestaurantDao;
+import restaurant.domain.Restaurant;
 
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletDelete extends HttpServlet {
+public class RestaurantServletDelete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Entity1ServletDelete() {
+    public RestaurantServletDelete() {
         super();
     }
     
@@ -41,7 +41,7 @@ public class Entity1ServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByUsername(request.getParameter("username"));
+				entity1 = entity1Dao.findByID(Integer.parseInt(request.getParameter("restaurant_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -50,20 +50,20 @@ public class Entity1ServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
+			if(entity1.getRestaurant_id()!=null){
 						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+						request.setAttribute("restaurant", entity1);
+						request.getRequestDispatcher("/jsps/restaurant/restaurant_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "restaurant not found");
+				request.getRequestDispatcher("/jsps/restaurant/restaurant_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				entity1Dao.delete(Integer.parseInt(request.getParameter("restaurant_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -71,8 +71,8 @@ public class Entity1ServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "restaurant Deleted");
+			request.getRequestDispatcher("/jsps/restaurant/restaurant_read_output.jsp").forward(request, response);
 		}
 	}
 }

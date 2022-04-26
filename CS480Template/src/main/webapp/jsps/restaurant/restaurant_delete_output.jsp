@@ -25,17 +25,17 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/RestaurantServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${restaurant.restaurant_id }"/>
-	Restaurant ID   :<input type="text" name="username" value="${restaurant.restaurant_id  }" disabled/>
+		<input type="hidden" name="restaurant_id" value="${restaurant.restaurant_id }"/>
+	Restaurant ID   :<input type="text" name="restaurant_id" value="${restaurant.restaurant_id  }" disabled/>
 	<br/>
 	
-	Name：<input type="text" name="password" value="${restaurant.name}" disabled/>
+	Name：<input type="text" name="name" value="${restaurant.name}" disabled/>
 	<br/>
-	Address：<input type="text" name="email" value="${restaurant.address }" disabled/>
+	Address：<input type="text" name="address" value="${restaurant.address }" disabled/>
 	<br/>
-	Phone Number：<input type="text" name="email" value="${restaurant.phone_number}" disabled/>
+	Phone Number：<input type="text" name="phone_number" value="${restaurant.phone_number}" disabled/>
 	<br/>
-	Founded Date：<input type="text" name="email" value="${restaurant.founded_date}" disabled/>
+	Founded Date：<input type="text" name="founded_date" value="${restaurant.founded_date}" disabled/>
 	<br/>
 	
 	<input type="submit" value="Delete Restaurant"/>

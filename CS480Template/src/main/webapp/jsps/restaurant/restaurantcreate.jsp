@@ -35,7 +35,7 @@
 	Phone Number：<input type="text" name="phone_number" value="${form.phone_number }"/>
 	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
 	<br/>
-	Founded Date：<input type="text" name="phone_number" value="${form.founded_date }"/>
+	Founded Date：<input type="text" name="founded_date" value="${form.founded_date }"/>
 	<span style="color: red; font-weight: 900">${errors.founded_date}</span>
 	<br/>
 	<input type="submit" value="Create Restaurant"/>

@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/RestaurantServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	restaurant_id   :<input type="text" name="username" value="${form.restaurant_id }"/>
+	restaurant_id   :<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
 	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	
 	<input type="submit" value="Read Restaurant"/>

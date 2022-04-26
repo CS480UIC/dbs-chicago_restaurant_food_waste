@@ -1,4 +1,4 @@
-package entity1.dao;
+package menu.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,12 +12,12 @@ import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.List;
 
-import entity1.domain.Restaurant;
+import menu.domain.Menu;
 
 /**
  * DDL functions performed in database
  */
-public class RestaurantDao {
+public class MenuDao {
 	
 	/**
 	 * user name to connect to the database 
@@ -29,29 +29,29 @@ public class RestaurantDao {
 	 */
 	private String MySQL_password = "foodwaste"; //TODO change password
 
-	public Restaurant findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Restaurant entity1 = new Restaurant();
+	public Menu findByID(Integer ID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Menu menu = new Menu();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/chicago_restaurant_food_waste", MySQL_user, MySQL_password);
-		    String sql = "select * from entity1 where username=?";
+		    String sql = "select * from menu where menu_id=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setInt(1,ID);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	String user_name = resultSet.getString("username");
-		    	if(user_name.equals(username)){
-		    		entity1.setUsername(resultSet.getString("username"));
-		    		entity1.setPassword(resultSet.getString("password"));
-		    		entity1.setEmail(resultSet.getString("email"));		
+		    	Integer menu_id = Integer.parseInt(resultSet.getString("menu_id"));
+		    	if(menu_id == ID){
+		    		menu.setMenu_id(Integer.parseInt(resultSet.getString("menu_id")));
+		    		menu.setRestaurant_id(Integer.parseInt(resultSet.getString("restaurant_id")));
+		    		menu.setMenu_item(resultSet.getString("menu_item"));		
 		    	}
 		    }
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
-		return entity1;
+		return menu;
 	}	
 	
 	/**
@@ -62,16 +62,16 @@ public class RestaurantDao {
 	 * @throws InstantiationException 
 	 */
 	
-	public void add(Restaurant form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void add(Menu form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/chicago_restaurant_food_waste", MySQL_user, MySQL_password);
 			
-			String sql = "insert into entity1 values(?,?,?)";
+			String sql = "insert into menu (menu_id,restaurant_id, menu_item) values(?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getUsername());
-		    preparestatement.setString(2,form.getPassword());
-		    preparestatement.setString(3,form.getEmail());
+		    preparestatement.setInt(1,form.getMenu_id());
+		    preparestatement.setInt(2,form.getRestaurant_id());
+		    preparestatement.setString(3,form.getMenu_item());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -86,16 +86,16 @@ public class RestaurantDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void update(Restaurant form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Menu form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/chicago_restaurant_food_waste", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE menu SET restaurant_id = ?, menu_item = ? where menu_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+		    preparestatement.setInt(1,form.getRestaurant_id());
+			preparestatement.setString(2,form.getMenu_item());
+		    preparestatement.setInt(3,form.getMenu_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -110,14 +110,14 @@ public class RestaurantDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void delete(Integer ID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/chicago_restaurant_food_waste", MySQL_user, MySQL_password);
 			
-			String sql = "delete from entity1 where username = ?";
+			String sql = "delete from menu where menu_id = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setInt(1,ID);
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
