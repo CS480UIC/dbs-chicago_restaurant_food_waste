@@ -22,14 +22,14 @@
   
   <body>
   <h1>Create Menu</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	restaurant_id :<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
-	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
-	<br/>
-	menu_id ：<input type="text" name="menu_id" value="${form.menu_id }"/>
+<form action="<c:url value='/MenuServletCreate'/>" method="post">
+	Menu ID ：<input type="text" name="menu_id" value="${form.menu_id }"/>
 	<span style="color: red; font-weight: 900">${errors.menu_id}</span>
 	<br/>
-	menu_item ：<input type="text" name="menu_item" value="${form.menu_item}"/>
+	Restaurant ID :<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
+	<br/>
+	Menu Item ：<input type="text" name="menu_item" value="${form.menu_item}"/>
 	<span style="color: red; font-weight: 900">${errors.menu_item }</span>
 	<br/>
 	<input type="submit" value="Create Menu"/>

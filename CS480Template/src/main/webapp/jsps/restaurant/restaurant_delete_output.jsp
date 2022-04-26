@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Restaurant</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,24 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Restaurant</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/RestaurantServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="username" value="${restaurant.restaurant_id }"/>
+	Restaurant ID   :<input type="text" name="username" value="${restaurant.restaurant_id  }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Name：<input type="text" name="password" value="${restaurant.name}" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Address：<input type="text" name="email" value="${restaurant.address }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Phone Number：<input type="text" name="email" value="${restaurant.phone_number}" disabled/>
+	<br/>
+	Founded Date：<input type="text" name="email" value="${restaurant.founded_date}" disabled/>
+	<br/>
+	
+	<input type="submit" value="Delete Restaurant"/>
 </form>
 
 </body>

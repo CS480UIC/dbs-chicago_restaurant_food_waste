@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete a Menu</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/MenuServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete Menu  :<input type="text" name="menu_id" value="${form.menu_id }"/>
 	<span style="color: red; font-weight: 900">${errors.menu_id }</span>

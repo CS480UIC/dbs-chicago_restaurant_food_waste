@@ -180,6 +180,90 @@
   
   <servlet>
     <description></description>
+    <display-name>MenuServletCreate</display-name>
+    <servlet-name>MenuServletCreate</servlet-name>
+    <servlet-class>menu.web.servlet.MenuServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServletCreate</servlet-name>
+    <url-pattern>/MenuServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MenuServletRead</display-name>
+    <servlet-name>MenuServletRead</servlet-name>
+    <servlet-class>menu.web.servlet.MenuServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServletRead</servlet-name>
+    <url-pattern>/MenuServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MenuServletUpdate</display-name>
+    <servlet-name>MenuServletUpdate</servlet-name>
+    <servlet-class>menu.web.servlet.MenuServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServletUpdate</servlet-name>
+    <url-pattern>/MenuServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MenuServletDelete</display-name>
+    <servlet-name>MenuServletDelete</servlet-name>
+    <servlet-class>menu.web.servlet.MenuServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServletDelete</servlet-name>
+    <url-pattern>/MenuServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>RestaurantServletCreate</display-name>
+    <servlet-name>RestaurantServletCreate</servlet-name>
+    <servlet-class>restaurant.web.servlet.RestaurantServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestaurantServletCreate</servlet-name>
+    <url-pattern>/RestaurantServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RestaurantServletRead</display-name>
+    <servlet-name>RestaurantServletRead</servlet-name>
+    <servlet-class>restaurant.web.servlet.RestaurantServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestaurantServletRead</servlet-name>
+    <url-pattern>/RestaurantServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RestaurantServletUpdate</display-name>
+    <servlet-name>RestaurantServletUpdate</servlet-name>
+    <servlet-class>restaurant.web.servlet.RestaurantServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestaurantServletUpdate</servlet-name>
+    <url-pattern>/RestaurantServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RestaurantServletDelete</display-name>
+    <servlet-name>RestaurantServletDelete</servlet-name>
+    <servlet-class>restaurant.web.servlet.RestaurantServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestaurantServletDelete</servlet-name>
+    <url-pattern>/RestaurantServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     

@@ -22,18 +22,21 @@
   
   <body>
   <h1>Restaurant Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	restaurant_id:<input type="text" name="restaurant_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/RestaurantServletCreate'/>" method="post">
+	Restaurant ID:<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	name：<input type="text" name="name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Name：<input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name}</span>
 	<br/>
-	address：<input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address}</span>
 	<br/>
-	phone_number：<input type="text" name="phone_number" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Phone Number：<input type="text" name="phone_number" value="${form.phone_number }"/>
+	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
+	<br/>
+	Founded Date：<input type="text" name="phone_number" value="${form.founded_date }"/>
+	<span style="color: red; font-weight: 900">${errors.founded_date}</span>
 	<br/>
 	<input type="submit" value="Create Restaurant"/>
 </form>

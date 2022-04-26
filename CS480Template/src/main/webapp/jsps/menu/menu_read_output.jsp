@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Menu Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,15 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Menu Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	Menu ID ：<input type="text" name="menu_id" value="${menu.menu_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Restaurant ID :<input type="text" name="restaurant_id" value="${menu.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Menu Item ：<input type="text" name="menu_item" value="${menu.menu_item}" disabled/>
 	<br/>
 </form>
 

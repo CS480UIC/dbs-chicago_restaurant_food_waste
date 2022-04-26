@@ -6,8 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import entity1.dao.RestaurantDao;
+import entity1.domain.Restaurant;
 
 
 /**
@@ -36,8 +36,8 @@ public class Entity1ServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method = request.getParameter("method");
-		Entity1Dao entity1Dao = new Entity1Dao();
-		Entity1 entity1 = null;
+		RestaurantDao entity1Dao = new RestaurantDao();
+		Restaurant entity1 = null;
 		if(method.equals("search"))
 		{
 			try {

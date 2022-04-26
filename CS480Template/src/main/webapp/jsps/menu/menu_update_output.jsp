@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Update Menu</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,29 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Menu</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Menu ID    :<input type="text" name="menu_id" value="${menu.menu_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Restaurant ID：<input type="text" name="restaurant_id" value="${menu.restaurant_id }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	
+	Menu Item	：<input type="text" name="menu_item" value="${menu.menu_item }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/MenuServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+		<input type="hidden" name="menu_id" value="${menu.menu_id}"/>
+	Restaurant ID：<input type="text" name="restaurant_id" value="${form.restaurant_id  }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Menu Item	：<input type="text" name="menu_item" value="${form.menu_item}"/>
+	<span style="color: red; font-weight: 900">${errors.menu_item }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Menu"/>
 </form>
 
 </body>

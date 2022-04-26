@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Update Restaurant</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,38 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Restaurant</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Restaurant ID   :<input type="text" name="username" value="${restaurant.restaurant_id  }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Name：<input type="text" name="password" value="${restaurant.name}" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Address：<input type="text" name="email" value="${restaurant.address }" disabled/>
+	<br/>
+	Phone Number：<input type="text" name="email" value="${restaurant.phone_number}" disabled/>
+	<br/>
+	Founded Date：<input type="text" name="email" value="${restaurant.founded_date}" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/RestaurantServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+		<input type="hidden" name="username" value="${restaurant.restaurant_id }"/>
+	Name：<input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name}</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address}</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Phone Number：<input type="text" name="phone_number" value="${form.phone_number }"/>
+	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
+	<br/>
+	Founded Date：<input type="text" name="phone_number" value="${form.founded_date }"/>
+	<span style="color: red; font-weight: 900">${errors.founded_date}</span>
+	<br/>
+	<input type="submit" value="Update Restaurant"/>
 </form>
 
 </body>
