@@ -1,6 +1,8 @@
 package dumpster.service;
 
 
+import java.util.List;
+
 import dumpster.dao.DumpsterDao;
 import dumpster.domain.Dumpster;
 
@@ -24,6 +26,11 @@ public class DumpsterService {
 		Dumpster dumpster1 = dumpsterDao.findByID(form.getDumpster_id());
 		if(dumpster1.getDumpster_id()!=null && dumpster1.getDumpster_id().equals(form.getDumpster_id())) throw new DumpsterException("This dumpster id has been already created!");
 		dumpsterDao.add(form);
+	}
+
+	public List<Object> findHighDumpsters() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		// TODO Auto-generated method stub
+		return dumpsterDao.findHighDumpsters();
 	}
 	
 }

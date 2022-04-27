@@ -1,6 +1,8 @@
 package menu.service;
 
 
+import java.util.List;
+
 import menu.dao.MenuDao;
 import menu.domain.Menu;
 
@@ -24,6 +26,11 @@ public class MenuService {
 		Menu entity1 = menuDao.findByID(form.getMenu_id());
 		if(entity1.getMenu_id()!=null && entity1.getMenu_id().equals(form.getMenu_id())) throw new MenuException("This menu has been registered!");
 		menuDao.add(form);
+	}
+
+	public List<Object> findLowMenu() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		// TODO Auto-generated method stub
+		return menuDao.findLowMenu();
 	}
 	
 }

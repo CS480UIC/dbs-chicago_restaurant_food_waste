@@ -442,6 +442,152 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HighCustomers</display-name>
+    <servlet-name>HighCustomers</servlet-name>
+    
+    <servlet-class>customer.web.servlet.HighCustomers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HighCustomers</servlet-name>
+    <url-pattern>/HighCustomers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ConcatCustomers</display-name>
+    <servlet-name>ConcatCustomers</servlet-name>
+    
+    <servlet-class>customer.web.servlet.ConcatCustomers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConcatCustomers</servlet-name>
+    <url-pattern>/ConcatCustomers</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HighDumpsters</display-name>
+    <servlet-name>HighDumpsters</servlet-name>
+    
+    <servlet-class>dumpster.web.servlet.HighDumpsters</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HighDumpsters</servlet-name>
+    <url-pattern>/HighDumpsters</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FoodWasteTruck</display-name>
+    <servlet-name>FoodWasteTruck</servlet-name>
+    
+    <servlet-class>food_waste.web.servlet.FoodWasteTruck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodWasteTruck</servlet-name>
+    <url-pattern>/FoodWasteTruck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LowFoodWaste</display-name>
+    <servlet-name>LowFoodWaste</servlet-name>
+    
+    <servlet-class>food_waste.web.servlet.LowFoodWaste</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LowFoodWaste</servlet-name>
+    <url-pattern>/LowFoodWaste</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LowTruck</display-name>
+    <servlet-name>LowTruck</servlet-name>
+    
+    <servlet-class>garbage_truck.web.servlet.LowTruck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LowTruck</servlet-name>
+    <url-pattern>/LowTruck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AvgTruckCapacity</display-name>
+    <servlet-name>AvgTruckCapacity</servlet-name>
+    
+    <servlet-class>garbage_truck.web.servlet.AvgTruckCapacity</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AvgTruckCapacity</servlet-name>
+    <url-pattern>/AvgTruckCapacity</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LowMenu</display-name>
+    <servlet-name>LowMenu</servlet-name>
+    
+    <servlet-class>menu.web.servlet.LowMenu</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LowMenu</servlet-name>
+    <url-pattern>/LowMenu</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AvgWasteRestaurant</display-name>
+    <servlet-name>AvgWasteRestaurant</servlet-name>
+    
+    <servlet-class>restaurant.web.servlet.AvgWasteRestaurant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AvgWasteRestaurant</servlet-name>
+    <url-pattern>/AvgWasteRestaurant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ConcatRestaurant</display-name>
+    <servlet-name>ConcatRestaurant</servlet-name>
+    
+    <servlet-class>restaurant.web.servlet.ConcatRestaurant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConcatRestaurant</servlet-name>
+    <url-pattern>/ConcatRestaurant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DateRestaurant</display-name>
+    <servlet-name>DateRestaurant</servlet-name>
+    
+    <servlet-class>restaurant.web.servlet.DateRestaurant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateRestaurant</servlet-name>
+    <url-pattern>/DateRestaurant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LowSupplierCountRestaurant</display-name>
+    <servlet-name>LowSupplierCountRestaurant</servlet-name>
+    
+    <servlet-class>restaurant.web.servlet.LowSupplierCountRestaurant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LowSupplierCountRestaurant</servlet-name>
+    <url-pattern>/LowSupplierCountRestaurant</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
