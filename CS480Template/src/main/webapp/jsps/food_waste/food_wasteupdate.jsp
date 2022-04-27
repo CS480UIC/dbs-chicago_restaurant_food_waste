@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update Food Waste</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/FoodWasteServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update food_waste_id  :<input type="text" name="food_waste_id" value="${form.food_waste_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_waste_id }</span>

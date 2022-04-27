@@ -261,6 +261,88 @@
     <url-pattern>/RestaurantServletDelete</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>SupplierServletCreate</display-name>
+    <servlet-name>SupplierServletCreate</servlet-name>
+    <servlet-class>supplier.web.servlet.SupplierServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupplierServletCreate</servlet-name>
+    <url-pattern>/SupplierServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SupplierServletRead</display-name>
+    <servlet-name>SupplierServletRead</servlet-name>
+    <servlet-class>supplier.web.servlet.SupplierServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupplierServletRead</servlet-name>
+    <url-pattern>/SupplierServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SupplierServletUpdate</display-name>
+    <servlet-name>SupplierServletUpdate</servlet-name>
+    <servlet-class>supplier.web.servlet.SupplierServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupplierServletUpdate</servlet-name>
+    <url-pattern>/SupplierServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SupplierServletDelete</display-name>
+    <servlet-name>SupplierServletDelete</servlet-name>
+    <servlet-class>supplier.web.servlet.SupplierServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupplierServletDelete</servlet-name>
+    <url-pattern>/SupplierServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FoodWasteServletCreate</display-name>
+    <servlet-name>FoodWasteServletCreate</servlet-name>
+    <servlet-class>food_waste.web.servlet.FoodWasteServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodWasteServletCreate</servlet-name>
+    <url-pattern>/FoodWasteServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FoodWasteServletRead</display-name>
+    <servlet-name>FoodWasteServletRead</servlet-name>
+    <servlet-class>food_waste.web.servlet.FoodWasteServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodWasteServletRead</servlet-name>
+    <url-pattern>/FoodWasteServletRead</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FoodWasteServletUpdate</display-name>
+    <servlet-name>FoodWasteServletUpdate</servlet-name>
+    <servlet-class>food_waste.web.servlet.FoodWasteServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodWasteServletUpdate</servlet-name>
+    <url-pattern>/FoodWasteServletUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FoodWasteServletDelete</display-name>
+    <servlet-name>FoodWasteServletDelete</servlet-name>
+    <servlet-class>food_waste.web.servlet.FoodWasteServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodWasteServletDelete</servlet-name>
+    <url-pattern>/FoodWasteServletDelete</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

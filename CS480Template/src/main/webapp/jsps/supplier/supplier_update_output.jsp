@@ -21,28 +21,34 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Supplier</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Supplier ID    :<input type="text" name="supplier_id" value="${supplier.supplier_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	restaurant ID：<input type="text" name="restaurant_id" value="${supplier.restaurant_id }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	address	：<input type="text" name="address" value="${supplier.address }" disabled/>
+	<br/>
+	phone_number	：<input type="text" name="phone_number" value="${supplier.phone_number }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/SupplierServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="supplier_id" value="${supplier.supplier_id }"/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	address	：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	phone_number	：<input type="text" name="phone_number" value="${form.phone_number }"/>
+	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
+	<br/>
+	<input type="submit" value="Update Supplier"/>
 </form>
 
 </body>

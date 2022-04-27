@@ -41,7 +41,7 @@ public class SupplierServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = supplierDao.findByID(Integer.parseInt(request.getParameter("menu_id")));
+				entity1 = supplierDao.findByID(Integer.parseInt(request.getParameter("supplier_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {

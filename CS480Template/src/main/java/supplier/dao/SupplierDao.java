@@ -40,7 +40,7 @@ public class SupplierDao {
 		    ResultSet resultSet = preparestatement.executeQuery();
 		    
 		    while(resultSet.next()){
-		    	Integer supplier_id = Integer.parseInt(resultSet.getString("suppler_id"));
+		    	Integer supplier_id = Integer.parseInt(resultSet.getString("supplier_id"));
 		    	if(supplier_id == ID){
 		    		supplier.setSupplier_id(Integer.parseInt(resultSet.getString("supplier_id")));
 		    		supplier.setRestaurant_id(Integer.parseInt(resultSet.getString("restaurant_id")));
@@ -93,11 +93,12 @@ public class SupplierDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/chicago_restaurant_food_waste", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE supplier SET restaurant_id = ?, phone_number = ? where supplier_id = ?;";
+			String sql = "UPDATE supplier SET restaurant_id = ?, address = ?, phone_number = ? where supplier_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getRestaurant_id());
-			preparestatement.setString(2,form.getPhone_number());
-		    preparestatement.setInt(3,form.getSupplier_id());
+		    preparestatement.setString(2, form.getAddress());
+			preparestatement.setString(3,form.getPhone_number());
+		    preparestatement.setInt(4,form.getSupplier_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

@@ -22,18 +22,18 @@
   
   <body>
   <h1>Supplier Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	supplier_id    :<input type="text" name="supplier_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/SupplierServletCreate'/>" method="post">
+	supplier_id    :<input type="text" name="supplier_id" value="${form.supplier_id }"/>
+	<span style="color: red; font-weight: 900">${errors.supplier_id }</span>
 	<br/>
-	restaurant_id：<input type="password" name="restaurant_id" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	restaurant_id：<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	address	：<input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	address	：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
-	phone_number	：<input type="text" name="phone_number" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	phone_number	：<input type="text" name="phone_number" value="${form.phone_number }"/>
+	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
 	<br/>
 	<input type="submit" value="Create Supplier"/>
 </form>

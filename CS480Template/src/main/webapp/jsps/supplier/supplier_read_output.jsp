@@ -24,11 +24,13 @@
   <h1>Read Entity Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	supplier_id    :<input type="text" name="supplier_id" value="${supplier.supplier_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${supplier.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	address	：<input type="text" name="address" value="${supplier.address }" disabled/>
+	<br/>
+	phone_number	：<input type="text" name="phone_number" value="${supplier.phone_number }" disabled/>
 	<br/>
 </form>
 

@@ -22,10 +22,10 @@
   
   <body>
   <h1>Update Supplier</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/SupplierServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Supplier   :<input type="text" name="supplier_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update Supplier   :<input type="text" name="supplier_id" value="${form.supplier_id }"/>
+	<span style="color: red; font-weight: 900">${errors.supplier_id }</span>
 	<br/>
 	<input type="submit" value="Update Supplier"/>
 </form>

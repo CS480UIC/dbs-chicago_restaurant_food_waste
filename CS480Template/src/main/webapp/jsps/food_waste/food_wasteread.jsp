@@ -23,9 +23,9 @@
   <body>
   <h1>Read Food Waste</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/FoodWasteServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	   food_waste_id: <input type="text" name="food_waste_id " value="${form.food_waste_id }"/>
+	   food_waste_id: <input type="text" name="food_waste_id" value="${form.food_waste_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_waste_id }</span>
 	<br/>
 

@@ -22,12 +22,12 @@
   
   <body>
   <h1>Delete a Food Waste</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/FoodWasteServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete Food Waste   :<input type="text" name="food_waste_id" value="${form.food_waste_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_waste_id }</span>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete Food Waste"/>
 </form>
   </body>
 </html>

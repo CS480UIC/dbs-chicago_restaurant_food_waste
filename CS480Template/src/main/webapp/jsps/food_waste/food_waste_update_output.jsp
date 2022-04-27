@@ -21,28 +21,32 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Food Waste</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Foodwaste ID    :<input type="text" name="food_waste_id" value="${food_waste.food_waste_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	avg_daily_waste：<input type="text" name="avg_daily_waste" value="${food_waste.avg_daily_waste }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	restaurant_id	：<input type="text" name="restaurant_id" value="${food_waste.restaurant_id }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/FoodWasteServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
+				<input type="hidden" name="food_waste_id" value="${food_waste.food_waste_id }"/>
+	avg_daily_waste：<input type="text" name="avg_daily_waste" value="${form.avg_daily_waste }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	restaurant_id	：<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	
+	
+	
+	<input type="submit" value="Update Food Waste"/>
 </form>
 
 </body>

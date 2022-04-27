@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete Supplier</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/SupplierServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Supplier   :<input type="text" name="supplier_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete Supplier   :<input type="text" name="supplier_id" value="${form.supplier_id }"/>
+	<span style="color: red; font-weight: 900">${errors.supplier_id }</span>
 	<br/>
 	<input type="submit" value="Delete Supplier"/>
 </form>

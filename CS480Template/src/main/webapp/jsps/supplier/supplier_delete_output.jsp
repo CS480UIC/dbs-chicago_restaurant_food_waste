@@ -23,17 +23,19 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/SupplierServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="supplier_id" value="${supplier.supplier_id }"/>
+	Supplier ID    :<input type="text" name="supplier_id" value="${supplier.supplier_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant ID：<input type="text" name="restaurant_id" value="${supplier.restaurant_id }" disabled />
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	address	：<input type="text" name="address" value="${supplier.address }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	phone_number	：<input type="text" name="phone_number" value="${supplier.phone_number }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Supplier"/>
 </form>
 
 </body>

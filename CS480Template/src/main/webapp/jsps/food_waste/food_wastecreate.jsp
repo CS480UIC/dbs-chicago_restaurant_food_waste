@@ -22,15 +22,15 @@
   
   <body>
   <h1>Create Food Waste</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/FoodWasteServletCreate'/>" method="post">
 
 	Food Waste ID: <input type="text" name="food_waste_id" value="${form.food_waste_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_waste_id }</span>
 	<br/>
-	Average Daily Waste: <input type="text" name="username" value="${form.avg_daily_waste}"/>
+	Average Daily Waste: <input type="text" name="avg_daily_waste" value="${form.avg_daily_waste}"/>
 	<span style="color: red; font-weight: 900">${errors.avg_daily_waste }</span>
 	<br/>
-	Restaurant ID: <input type="text" name="username" value="${form.restaurant_id }"/>
+	Restaurant ID: <input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
 	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
 	

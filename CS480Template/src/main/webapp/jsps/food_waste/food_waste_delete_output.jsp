@@ -23,17 +23,17 @@
   <body>
   <h1>Delete a Food_Waste</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/FoodWasteServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="food_waste_id" value="${food_waste.food_waste_id }"/>
+	food_waste_id    :<input type="text" name="food_waste_id" value="${food_waste.food_waste_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	avg_daily_waste：<input type="text" name="avg_daily_waste" value="${food_waste.avg_daily_waste }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	restaurant_id	：<input type="text" name="restaurant_id" value="${food_waste.restaurant_id }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete Food Waste"/>
 </form>
 
 </body>
