@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Garbage Truck</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,28 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Garbage Truck</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	truck_id    :<input type="text" name="truck_id" value="${garbage_truck.truck_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	restaurant_id：<input type="text" name="restaurant_id" value="${garbage_truck.restaurant_id }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	truck_capacity	：<input type="text" name="truck_capacity" value="${garbage_truck.truck_capacity }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/GarbageTruckServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
+				<input type="hidden" name="truck_id" value="${garbage_truck.truck_id }"/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${form.restaurant_id }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
+	truck_capacity	：<input type="text" name="truck_capacity" value="${form.truck_capacity }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Garbage Truck"/>
 </form>
 
 </body>

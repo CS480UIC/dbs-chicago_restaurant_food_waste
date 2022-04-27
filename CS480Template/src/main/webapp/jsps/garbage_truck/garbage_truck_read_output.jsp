@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Garbage Truck Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,14 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Garbage Truck Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	truck_id    :<input type="text" name="truck_id" value="${garbage_truck.truck_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${garbage_truck.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	truck_capacity	：<input type="text" name="truck_capacity" value="${garbage_truck.truck_capacity }" disabled/>
 	<br/>
 </form>
 

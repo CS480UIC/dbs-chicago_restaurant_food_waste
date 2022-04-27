@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Update Dumpster</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,9 +22,9 @@
   
   <body>
   <h1>Update a Dumpster</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/DumpsterServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update dumpster_id   :<input type="text" name="username" value="${form.dumpster_id }"/>
+	Update dumpster_id   :<input type="text" name="dumpster_id" value="${form.dumpster_id }"/>
 	<span style="color: red; font-weight: 900">${errors.dumpster_id }</span>
 	<br/>
 	<input type="submit" value="Update Dumpster"/>

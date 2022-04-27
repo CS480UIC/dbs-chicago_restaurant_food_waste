@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Dumpster Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,14 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Dumpster Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	dumpster_id    :<input type="text" name="dumpster_id" value="${dumpster.dumpster_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${dumpster.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	capacity	：<input type="text" name="capacity" value="${dumpster.capacity }" disabled/>
 	<br/>
 </form>
 

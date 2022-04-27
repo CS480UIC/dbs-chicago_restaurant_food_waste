@@ -343,6 +343,93 @@
     <url-pattern>/FoodWasteServletDelete</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>DumpsterServletCreate</display-name>
+    <servlet-name>DumpsterServletCreate</servlet-name>
+    <servlet-class>dumpster.web.servlet.DumpsterServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DumpsterServletCreate</servlet-name>
+    <url-pattern>/DumpsterServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DumpsterServletRead</display-name>
+    <servlet-name>DumpsterServletRead</servlet-name>
+    <servlet-class>dumpster.web.servlet.DumpsterServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DumpsterServletRead</servlet-name>
+    <url-pattern>/DumpsterServletRead</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>DumpsterServletUpdate</display-name>
+    <servlet-name>DumpsterServletUpdate</servlet-name>
+    <servlet-class>dumpster.web.servlet.DumpsterServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DumpsterServletUpdate</servlet-name>
+    <url-pattern>/DumpsterServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DumpsterServletDelete</display-name>
+    <servlet-name>DumpsterServletDelete</servlet-name>
+    <servlet-class>dumpster.web.servlet.DumpsterServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DumpsterServletDelete</servlet-name>
+    <url-pattern>/DumpsterServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GarbageTruckServletCreate</display-name>
+    <servlet-name>GarbageTruckServletCreate</servlet-name>
+    <servlet-class>garbage_truck.web.servlet.GarbageTruckServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GarbageTruckServletCreate</servlet-name>
+    <url-pattern>/GarbageTruckServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GarbageTruckServletRead</display-name>
+    <servlet-name>GarbageTruckServletRead</servlet-name>
+    <servlet-class>garbage_truck.web.servlet.GarbageTruckServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GarbageTruckServletRead</servlet-name>
+    <url-pattern>/GarbageTruckServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GarbageTruckServletUpdate</display-name>
+    <servlet-name>GarbageTruckServletUpdate</servlet-name>
+    <servlet-class>garbage_truck.web.servlet.GarbageTruckServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GarbageTruckServletUpdate</servlet-name>
+    <url-pattern>/GarbageTruckServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GarbageTruckServletDelete</display-name>
+    <servlet-name>GarbageTruckServletDelete</servlet-name>
+    <servlet-class>garbage_truck.web.servlet.GarbageTruckServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GarbageTruckServletDelete</servlet-name>
+    <url-pattern>/GarbageTruckServletDelete</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <description></description>

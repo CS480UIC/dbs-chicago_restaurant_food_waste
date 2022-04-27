@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Garbage Truck</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,19 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Garbage Truck</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/GarbageTruckServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="truck_id" value="${garbage_truck.truck_id }"/>
+	truck_id    :<input type="text" name="truck_id" value="${garbage_truck.truck_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${garbage_truck.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	truck_capacity	：<input type="text" name="truck_capacity" value="${garbage_truck.truck_capacity }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete Garbage Truck"/>
 </form>
 
 </body>

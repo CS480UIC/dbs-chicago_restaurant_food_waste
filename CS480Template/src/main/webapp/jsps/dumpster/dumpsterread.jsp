@@ -23,7 +23,7 @@
   <body>
   <h1>Read a Dumpster</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/DumpsterServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	dumpster_id   :<input type="text" name="dumpster_id" value="${form.dumpster_id }"/>
 	<span style="color: red; font-weight: 900">${errors.dumpster_id }</span>

@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete Garbage Truck</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/GarbageTruckServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Garbage Truck   :<input type="text" name="truck_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete Garbage Truck   :<input type="text" name="truck_id" value="${form.truck_id }"/>
+	<span style="color: red; font-weight: 900">${errors.truck_id }</span>
 	<br/>
 	<input type="submit" value="Delete Garbage Truck"/>
 </form>

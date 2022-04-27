@@ -22,15 +22,15 @@
   
   <body>
   <h1>Garbage Truck Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	truck_id    :<input type="text" name="truck_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/GarbageTruckServletCreate'/>" method="post">
+	truck_id    :<input type="text" name="truck_id" value="${form.truck_id }"/>
+	<span style="color: red; font-weight: 900">${errors.truck_id }</span>
 	<br/>
-	restaurant_id：<input type="password" name="restaurant_id" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	restaurant_id：<input type="password" name="restaurant_id" value="${form.restaurant_id }"/>
+	<span style="color: red; font-weight: 900">${errors.restaurant_id }</span>
 	<br/>
-	capacity	：<input type="text" name="capacity" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	truck_capacity	：<input type="text" name="truck_capacity" value="${form.truck_capacity }"/>
+	<span style="color: red; font-weight: 900">${errors.truck_capacity }</span>
 	<br/>
 	<input type="submit" value="Create Garbage Truck"/>
 </form>

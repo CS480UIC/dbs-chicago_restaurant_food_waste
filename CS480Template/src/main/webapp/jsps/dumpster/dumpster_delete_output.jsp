@@ -21,19 +21,19 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Dumpster</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/DumpsterServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="dumpster_id" value="${dumpster.dumpster_id }"/>
+	dumpster_id    :<input type="text" name="dumpster_id" value="${dumpster.dumpster_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	restaurant_id：<input type="text" name="restaurant_id" value="${dumpster.restaurant_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	capacity	：<input type="text" name="capacity" value="${dumpster.capacity }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete Dumpster"/>
 </form>
 
 </body>

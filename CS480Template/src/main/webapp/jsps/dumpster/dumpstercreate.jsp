@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a Dumpster</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/DumpsterServletCreate'/>" method="post">
 	dumpster_id :<input type="text" name="dumpster_id" value="${form.dumpster_id }"/>
 	<span style="color: red; font-weight: 900">${errors.dumpster_id }</span>
 	<br/>
