@@ -61,7 +61,7 @@ public class GarbageTruckServletUpdate extends HttpServlet {
 
 			}
 			else{
-				request.setAttribute("msg", "Order not found");
+				request.setAttribute("msg", "Truck not found");
 				request.getRequestDispatcher("/jsps/garbage_truck/garbage_truck_read_output.jsp").forward(request, response);
 			}
 		}
@@ -89,7 +89,7 @@ public class GarbageTruckServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Order Updated");
+			request.setAttribute("msg", "Truck Updated");
 			request.getRequestDispatcher("/jsps/garbage_truck/garbage_truck_read_output.jsp").forward(request, response);
 		}
 	}

@@ -96,8 +96,8 @@ public class GarbageTruckDao {
 			String sql = "UPDATE `garbage_truck` SET restaurant_id = ?, truck_capacity = ? where truck_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getRestaurant_id());
-			preparestatement.setInt(2,form.getTruck_id());
-		    preparestatement.setInt(3,form.getTruck_capacity());
+			preparestatement.setInt(2,form.getTruck_capacity());
+		    preparestatement.setInt(3,form.getTruck_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

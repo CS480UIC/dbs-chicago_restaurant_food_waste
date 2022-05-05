@@ -40,7 +40,7 @@
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	truck_capacity	：<input type="text" name="truck_capacity" value="${form.truck_capacity }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<span style="color: red; font-weight: 900">${errors.truck_capacity }</span>
 	<br/>
 	<input type="submit" value="Update Garbage Truck"/>
 </form>
